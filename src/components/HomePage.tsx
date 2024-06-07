@@ -1,8 +1,8 @@
-
+import "../App.css"
 
 function HomePage() {
   return (
-    <div>
+    <div className="container">
       <h1>This is my homepage</h1>
       <h1>DoctorStrange </h1>
       <ul>
