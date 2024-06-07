@@ -1,17 +1,21 @@
-import "./App.css"
+import { useState } from "react";
+import "./App.css";
+import AddButton from "./components/AddButton";
+import TaskList from "./components/TaskList";
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import TodoApp from "./TodoApp";
 function App() {
   return (
-    <div className="container">
-      <h1>Todo App</h1>
-      <div>
-        <input type="text" placeholder="Add a new todo" />
-        <button>Add</button>
-      </div>
-      <ul>
-        <li>Task 1</li>
-      </ul>
-    </div>
-  )
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/todo" element={<TodoApp />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
