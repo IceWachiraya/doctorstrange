@@ -1,4 +1,5 @@
-import "../App.css"
+import "../App.css";
+import { CiStar } from "react-icons/ci";
 
 function HomePage() {
   return (
@@ -6,17 +7,37 @@ function HomePage() {
       <h1>This is my homepage</h1>
       <h1>DoctorStrange </h1>
       <ul>
-        <li>Care</li>
-        <li>Tui</li>
-        <li>Por</li>
-        <li>Aomsin</li>
-        <li>Ice</li>
-        <li>Dew</li>
-        <li>Boss</li>
+        <li>
+          <CiStar />
+          Care
+        </li>
+        <li>
+          <CiStar />
+          Tui
+        </li>
+        <li>
+          <CiStar />
+          Por
+        </li>
+        <li>
+          <CiStar />
+          Aomsin
+        </li>
+        <li>
+          <CiStar />
+          Ice
+        </li>
+        <li>
+          <CiStar />
+          Dew
+        </li>
+        <li>
+          <CiStar />
+          Boss
+        </li>
       </ul>
     </div>
-
   );
 }
 
-export default HomePage
+export default HomePage;
